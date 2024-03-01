@@ -1,1 +1,1 @@
-export const BACKEND_URL = "https://promanage-backend-5372.onrender.com/api";
+export const BACKEND_URL = "https://pro-manage-b.onrender.com/api";
