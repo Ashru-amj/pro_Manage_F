@@ -11,7 +11,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 function DashboardContent() {
-    
+    const [userName, setUserName] = useState("");
     const [currentDate, setCurrentDate] = useState("");
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [isCloseModalOpen, setIsCloseModalOpen] = useState(false);
@@ -22,8 +22,6 @@ function DashboardContent() {
     const [collapseAllProgress, setCollapseAllProgress] = useState(true);
     const [collapseAllDone, setCollapseAllDone] = useState(true);
 
-    const name =localStorage.getItem('name')
-    
     const updateTaskStatus = (taskId, newStatus) => {
         setTasks(prevTasks => {
             const updatedTasks = prevTasks.map(task => {
@@ -165,7 +163,7 @@ function DashboardContent() {
         <>
             <div className={styles.dashboardScreen}>
                 <div className={styles.dashboardHeader}>
-                    <h1 className={styles.dashboardHeaderName}>Welcome! {name}</h1>
+                    <h1 className={styles.dashboardHeaderName}>Welcome! {userName}</h1>
                     <p className={styles.dashboardDate}>{currentDate}</p>
                     <h1 className={styles.dashboardTitle}>Board</h1>
                     <div className={styles.dashboardOptionDiv}>
