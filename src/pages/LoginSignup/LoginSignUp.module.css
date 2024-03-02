@@ -137,3 +137,34 @@ body {
     height: 20px;
     right: 35px;
 }
+
+
+
+@media screen and (max-width: 768px) {
+    .mainContainer {
+        flex-direction: column;
+    }
+
+    .leftdiv {
+        width: 100%;
+        height: auto;
+    }
+
+    .rightdiv, .logInFormContainer {
+        width: 100%;
+        height: auto;
+    }
+
+    .leftdivlogo {
+        width: 80%;
+        margin: 5vh auto;
+    }
+
+    .formInput {
+        width: 90%;
+    }
+
+    .passwordToggle, .confirmPasswordToggle, .loginPasswordToggle {
+        right: 15px;
+    }
+}

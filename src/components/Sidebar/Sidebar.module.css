@@ -36,3 +36,20 @@
 /* .activeMode{
     background-color: yellow;
 } */
+
+
+
+@media screen and (max-width: 768px) {
+    .sideBar {
+        width: 100%; /* Full width on small screens */
+    }
+
+    .modesContainer {
+        flex-direction: row;
+        overflow-x: auto; /* Enable horizontal scrolling on small screens */
+    }
+
+    .mode {
+        margin: 0 10px; /* Adjust margin for better spacing on small screens */
+    }
+}

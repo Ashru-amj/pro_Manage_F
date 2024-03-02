@@ -174,7 +174,7 @@ function LoginSignup() {
                 });
                 setIsLoginLoading(false);
                 setTimeout(() => {
-                    navigate("/dashboard"); // Redirect to login after 2 seconds
+                    navigate("/dashboard"); 
                 }, 2000);
             } else {
                 toast.error("Incorrect Email or Password. Try again.", {
