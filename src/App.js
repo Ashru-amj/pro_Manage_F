@@ -6,6 +6,7 @@ import Dashboard from './pages/Dashboard';
 import Analytics from './pages/Analytics';
 import Setting from './pages/Setting';
 import { isAuthenticated } from "./constants/auth";
+import CardPublish from './components/CardPublish/CardPublish';
 
 function PrivateRoute({ element, redirectTo }) {
   const navigate = useNavigate();
@@ -33,6 +34,8 @@ function App() {
           <Route path="/setting" element={
             <PrivateRoute element={isAuthenticated ? <Setting /> : <Navigate to="/" />} />
           } />
+          <Route path="/task/:id" element={<CardPublish />} />
+
         </Routes>
       </div>
     </BrowserRouter>
